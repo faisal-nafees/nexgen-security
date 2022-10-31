@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --primary-color: #1c434c;
+  --secondary-color: #fcae04;
+  --dark-gray: #868e96;
+  --light-gray: #dee2e6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Background Change On Scroll  */
+
+header.black {
+  background: #fff;
+  transition: all qs ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+    0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+header.black button,
+header.black ul .faq {
+  color: #1c434c;
+  border-color: #1c434c;
+}
+header.black btn:focus {
+  border-color: #1c434c;
+}
+
+header.black btn:hover {
+  background-color: #1c434c;
+}
+
+/* Below styles fake what can be achieved with the tailwind config
+     you need to add the group-hover variant to scale and define your custom
+     min width style.
+  	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+  	 for implementation with config file
+  */
+.group:hover .group-hover\:scale-100 {
+  transform: scale(1);
+}
+.group:hover .group-hover\:-rotate-180 {
+  transform: rotate(180deg);
+}
+.scale-0 {
+  transform: scale(0);
+}
+.min-w-32 {
+  min-width: 8rem;
+}
+
+.header {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* since nested groupes are not supported we have to use 
+     regular css for the nested dropdowns 
+  */
+li > ul {
+  transform: translatex(100%) scale(0);
+}
+li:hover > ul {
+  transform: translatex(101%) scale(1);
+}
+li > button svg {
+  transform: rotate(-90deg);
+}
+li:hover > button svg {
+  transform: rotate(-270deg);
+}
+
+.header-links button span,
+.header-links a span {
+  position: relative;
+}
+
+.header-links button span::before,
+.header-links a:hover span::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -4px;
+  right: -4px;
+  display: block;
+  height: 6px;
+}
+
+.header-links button:hover span::before,
+.header-links a:hover span::before {
+  background-color: var(--secondary-color);
+}
+
+/* Testimonial */
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #dee2e6;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.swiper-nav-btn::before,
+.swiper-nav-btn::after {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.swiper-nav-btn:hover {
+  color: #679cff;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--secondary-color);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+/* =======Section Divider====== */
+/* Bottom */
+
+.shapedividers_com-4081 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-4081::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 154px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%231c434c"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-4081::before {
+    background-size: 100% calc(2vw + 154px);
+  }
+}
+
+/* Top */
+
+.shapedividers_com-3155 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-3155::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 154px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%231c434c"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-3155::before {
+    background-size: 100% calc(2vw + 154px);
+  }
+}
+
+/* White Top */
+
+.shapedividers_com-3813 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-3813::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 154px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23ffffff"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-3813::before {
+    background-size: 100% calc(2vw + 154px);
+  }
+}
