@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       primaryColor: "#1c434c",
-      primaryTint: "#496970",
+      black: "#000",
       secondaryColor: "#fcae04",
       secondaryTint: "#fdc64f",
       darkGray: "#868e96",
