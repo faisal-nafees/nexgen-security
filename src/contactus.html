@@ -20,7 +20,7 @@
 
 <body class="overflow-x-hidden w-screen">
     <!-- navbar goes here -->
-    <header class="bg-primaryColor fixed top-0 z-50 w-screen">
+    <header class="bg-white fixed top-0 z-50 w-screen shadow-lg">
         <nav class="relative">
             <div class="max-w-7xl mx-auto px-4 md:px-8 ">
                 <div class="flex justify-between h-24 items-center">
@@ -29,7 +29,7 @@
                         <div class="hidden lg:flex items-center space-x-1">
                             <div @click.away="open1 = false" class="" x-data="{ open1: false }">
                                 <button @click="open1 = !open1"
-                                    class="flex flex-row text-[#fff] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
+                                    class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
                                     <span class=" text-lg font-semibold">HOW WE DO</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open1, 'rotate-0': !open1}"
@@ -109,7 +109,7 @@
                             <!-- Website Logo -->
                             <a href="../index.html"
                                 class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-0 md:mb-0">
-                                <img src="../image/logo1.jpg" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20" />
+                                <img src="../image/logo.png" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20" />
                             </a>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
 
                         <div @click.away="open = false" class="" x-data="{ open: false }">
                             <button @click="open = !open"
-                                class="flex flex-row text-[#fff] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
+                                class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
                                 <span class=" text-lg font-semibold">WHAT WE DO</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20"
                                     :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -194,14 +194,14 @@
                         </div>
 
                         <ul class="flex items-center header-links gap-4">
-                            <li class="rounded-sm px-3 py-1  text-[#fff] faq">
+                            <li class="rounded-sm px-3 py-1  text-primaryColor faq">
                                 <a href="#"><span class="text-lg font-semibold">WHO WE HELP</span></a>
                             </li>
-                            <li class="rounded-sm px-3 py-1   text-[#fff] faq">
+                            <li class="rounded-sm px-3 py-1   text-primaryColor faq">
                                 <a href="faq.html"><span class="text-lg font-semibold">FAQ's</span></a>
                             </li>
                             <li
-                                class="rounded-lg md:px-4 font-bold md:py-2 lg:px-6 lg:py-3 lg:text-base  bg-white text-primaryColor uppercase hover:bg-secondaryColor hover:text-primaryColor consultation-btn">
+                                class="rounded-lg md:px-4 font-bold md:py-2 lg:px-6 lg:py-3 lg:text-base  bg-primaryColor text-white uppercase hover:bg-secondaryColor hover:text-primaryColor consultation-btn">
                                 <a href="contactus.html">Free Consultation</a>
                             </li>
                         </ul>
@@ -211,7 +211,7 @@
                     <!-- Mobile menu button -->
                     <div class="lg:hidden flex items-center">
                         <div
-                            class=" hidden md:block  rounded-lg md:px-4 md:py-2 mr-4 lg:px-6 lg:py-3 lg:text-base font-bold bg-white text-primaryColor uppercase consultation-btn">
+                            class=" hidden md:block  rounded-lg md:px-4 md:py-2 mr-4 lg:px-6 lg:py-3 lg:text-base font-bold bg-primaryColor text-white uppercase consultation-btn">
                             <a href="contactus.html">Free Consultation</a>
 
                         </div>
@@ -415,7 +415,7 @@
 
 
     <!-- Contact us -->
-    <section class=" flex flex-row mx-auto justify-center gap-12 py-32">
+    <section class=" flex flex-row mx-auto justify-center gap-12 pb-32 pt-40">
         <form class="md:w-[600px] w-[350px] rounded-md shadow-2xl  grid gap-2 px-4 py-8">
             <div class="flex md:justify-between md:items-center flex-col md:flex-row">
                 <label for="name" class="w-32 md:text-right pr-4 font-bold text-gray-700">First Name</label>

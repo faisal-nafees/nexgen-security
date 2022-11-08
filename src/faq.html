@@ -23,7 +23,7 @@
 
 <body class="overflow-x-hidden w-screen">
     <!-- navbar goes here -->
-    <header class="bg-primaryColor fixed top-0 z-50 w-screen">
+    <header class="bg-white fixed top-0 z-50 w-screen shadow-lg">
         <nav class="relative">
             <div class="max-w-7xl mx-auto px-4 md:px-8 ">
                 <div class="flex justify-between h-24 items-center">
@@ -32,7 +32,7 @@
                         <div class="hidden lg:flex items-center space-x-1">
                             <div @click.away="open1 = false" class="" x-data="{ open1: false }">
                                 <button @click="open1 = !open1"
-                                    class="flex flex-row text-[#fff] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
+                                    class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
                                     <span class=" text-lg font-semibold">HOW WE DO</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open1, 'rotate-0': !open1}"
@@ -121,7 +121,7 @@
 
                         <div @click.away="open = false" class="" x-data="{ open: false }">
                             <button @click="open = !open"
-                                class="flex flex-row text-[#fff] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
+                                class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
                                 <span class=" text-lg font-semibold">WHAT WE DO</span>
                                 <svg fill="currentColor" viewBox="0 0 20 20"
                                     :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -197,15 +197,15 @@
                         </div>
 
                         <ul class="flex items-center header-links gap-4">
-                            <li class="rounded-sm px-3 py-1  text-[#fff] faq">
+                            <li class="rounded-sm px-3 py-1  text-primaryColor faq">
                                 <a href="#"><span class="text-lg font-semibold">WHO WE HELP</span></a>
                             </li>
-                            <li class="rounded-sm px-3 py-1   text-[#fff] faq">
+                            <li class="rounded-sm px-3 py-1   text-primaryColor faq">
                                 <a href="/faq.html"><span class="text-lg font-semibold">FAQ's</span></a>
                             </li>
                             <li
-                                class="rounded-lg md:px-4 font-bold md:py-2 lg:px-6 lg:py-3 lg:text-base bg-white text-primaryColor uppercase hover:bg-secondaryColor hover:text-primaryColor consultation-btn">
-                                <a href="/contactus.html">Free Consultation</a>
+                                class="rounded-lg md:px-4 font-bold md:py-2 lg:px-6 lg:py-3 lg:text-base bg-primaryColor text-white uppercase hover:bg-secondaryColor hover:text-primaryColor consultation-btn">
+                                <a href="contactus.html">Free Consultation</a>
                             </li>
                         </ul>
 
@@ -214,8 +214,8 @@
                     <!-- Mobile menu button -->
                     <div class="lg:hidden flex items-center">
                         <div
-                            class=" hidden md:block  rounded-lg md:px-4 md:py-2 mr-4 lg:px-6 lg:py-3 lg:text-base font-bold bg-white text-primaryColor uppercase consultation-btn">
-                            <a href="/contactus.html">Free Consultation</a>
+                            class=" hidden md:block  rounded-lg md:px-4 md:py-2 mr-4 lg:px-6 lg:py-3 lg:text-base font-bold bg-primaryColor text-white uppercase consultation-btn">
+                            <a href="contactus.html">Free Consultation</a>
 
                         </div>
                         <button class="outline-none mobile-menu-button bg-secondaryColor p-2 rounded-lg">
@@ -406,7 +406,7 @@
                     </li>
                 </ul>
                 <div class="flex justify-center md:hidden lg:text-base mb-3  font-bold  text-white uppercase">
-                    <a href="/contactus.html"
+                    <a href="contactus.html"
                         class="bg-primaryColor hover:bg-secondaryColor hover:text-primaryColor py-2 px-4 rounded-lg">Free
                         Consultation</a>
                 </div>
@@ -416,30 +416,8 @@
 
     <!--================== FAQ's==============-->
 
-    <section class="py-32">
-        <div class="py-8 bg-indigo-100 lg:bg-white flex justify-center lg:justify-start lg:px-12">
-            <div class="cursor-pointer flex items-center ">
-                <div>
-                    <!-- <svg class="w-10 text-indigo-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 225 225" style="enable-background:new 0 0 225 225;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill: none;
-                      stroke: currentColor;
-                      stroke-width: 20;
-                      stroke-linecap: round;
-                      stroke-miterlimit: 3;
-                    }
-                  </style>
-                  <g transform="matrix( 1, 0, 0, 1, 0,0) ">
-                    <g>
-                      <path id="Layer0_0_1_STROKES" class="st0" d="M173.8,151.5l13.6-13.6 M35.4,89.9l29.1-29 M89.4,34.9v1 M137.4,187.9l-0.6-0.4     M36.6,138.7l0.2-0.2 M56.1,169.1l27.7-27.6 M63.8,111.5l74.3-74.4 M87.1,188.1L187.6,87.6 M110.8,114.5l57.8-57.8" />
-                    </g>
-                  </g>
-                </svg> -->
-                </div>
+    <section class="pt-32 md:pb-20 pb-12">
 
-            </div>
-        </div>
         <div class="mt-8 opacity-75">
             <svg class="w-1/2 max-w-screen-sm mx-auto" xmlns="http://www.w3.org/2000/svg"
                 id="ffb55883-6880-4c99-84fd-4a8eccb5f463" data-name="Layer 1" viewBox="0 0 887.5 444.00977">
@@ -555,7 +533,7 @@
         </div>
         <div>
             <div class="">
-                <div class="mx-auto text-center text-2xl text-gray-900 lg:text-4xl  mb-3 font-bold  pt-2 uppercase">
+                <div class="mx-auto text-center text-xl text-gray-900 lg:text-4xl  mb-3 font-bold  pt-2 uppercase">
                     Frequently Asked
                     Questions </div>
                 <div class="mx-auto text-center w-32 border-solid border-b-4 border-yellow-500 h-1"></div>
@@ -566,7 +544,7 @@
                         class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
-                                <div class="text-primaryColor text-lg font-medium ">
+                                <div class="text-primaryColor text-md md:text-lg font-medium ">
                                     Do you accept Paypal?
                                 </div>
                                 <div>
@@ -607,7 +585,7 @@
                         class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
-                                <div class="text-primaryColor text-lg font-medium">
+                                <div class="text-primaryColor text-md md:text-lg font-medium">
                                     What is your SLA Guarantee ?
                                 </div>
                                 <div>
@@ -648,7 +626,7 @@
                         class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
-                                <div class="text-primaryColor text-lg font-medium">
+                                <div class="text-primaryColor text-md md:text-lg font-medium">
                                     Are there more Tailwind templates ?
                                 </div>
                                 <div>
@@ -689,7 +667,7 @@
                         class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
-                                <div class="text-primaryColor text-lg font-medium">
+                                <div class="text-primaryColor text-md md:text-lg font-medium">
                                     Is this template free for commercial use ?
                                 </div>
                                 <div>
