@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
-  --primary-color: #1c434c;
+  --primary-color: #000;
   --secondary-color: #fcae04;
   --dark-gray: #868e96;
   --light-gray: #dee2e6;
@@ -26,15 +26,13 @@ header.black {
 
 header.black button,
 header.black ul .faq {
-  color: #1c434c;
-  border-color: #1c434c;
-}
-header.black btn:focus {
-  border-color: #1c434c;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-header.black btn:hover {
-  background-color: #1c434c;
+header.black .consultation-btn{
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Below styles fake what can be achieved with the tailwind config
@@ -128,149 +126,13 @@ li:hover > button svg {
 .swiper-pagination-bullet {
   background-color: var(--secondary-color);
   opacity: 1;
+  width: 2px;
+  height: 4rem;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+  background-color: #fff;
 }
 
-/* =======Section Divider====== */
-/* Bottom */
 
-.shapedividers_com-4081 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-4081::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw;
-  background-size: 100% 154px;
-  background-position: 50% 100%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%231c434c"/></svg>');
-}
 
-@media (min-width: 2100px) {
-  .shapedividers_com-4081::before {
-    background-size: 100% calc(2vw + 154px);
-  }
-}
-
-/* Top */
-
-.shapedividers_com-3155 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-3155::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw;
-  background-size: 100% 154px;
-  background-position: 50% 0%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%231c434c"/></svg>');
-}
-
-@media (min-width: 2100px) {
-  .shapedividers_com-3155::before {
-    background-size: 100% calc(2vw + 154px);
-  }
-}
-
-/* Bottom Black */
-
-.shapedividers_com-6982 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-6982::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw;
-  background-size: 100% 154px;
-  background-position: 50% 100%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23000000"/></svg>');
-}
-
-@media (min-width: 2100px) {
-  .shapedividers_com-6982::before {
-    background-size: 100% calc(2vw + 154px);
-  }
-}
-
-/*Top Black */
-
-.shapedividers_com-4987 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-4987::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw;
-  background-size: 100% 154px;
-  background-position: 50% 0%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23000000"/></svg>');
-}
-
-@media (min-width: 2100px) {
-  .shapedividers_com-4987::before {
-    background-size: 100% calc(2vw + 154px);
-  }
-}
-
-/* White Top */
-
-.shapedividers_com-3813 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-3813::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw;
-  background-size: 100% 154px;
-  background-position: 50% 0%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23ffffff"/></svg>');
-}
-
-@media (min-width: 2100px) {
-  .shapedividers_com-3813::before {
-    background-size: 100% calc(2vw + 154px);
-  }
-}
