@@ -8,7 +8,11 @@ module.exports = {
       darkGray: "#868e96",
       lightGray: "#e9ecef",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-video':"url('/image/hero.mp4')"
+      }
+    },
   },
   plugins: [],
 };
