@@ -82,4 +82,3 @@ $(window).on("scroll", function () {
 tailwind.config = {
   plugins: [require("@tailwindcss/forms")],
 };
-// Faq's

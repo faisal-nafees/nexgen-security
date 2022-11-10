@@ -14,7 +14,11 @@ body {
 
 header.black {
   background: #fff;
-  transition: all qs ease;
+  transition: all 1s ease-in-out;
+  /* height: 100px; */
+
+
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -33,7 +37,20 @@ header.black ul .faq {
 header.black .consultation-btn{
   background-color: var(--primary-color);
   color: #fff;
+  border-radius: 0.5rem;
 }
+
+/* header.black button span {
+font-size: 14px;
+transition: all 2s ease-in-out;
+
+}
+header.black img {
+transition: all 2s ease-in-out;
+
+  height: 70px;
+  width: 70px;
+} */
 
 /* Below styles fake what can be achieved with the tailwind config
      you need to add the group-hover variant to scale and define your custom
@@ -135,38 +152,49 @@ li:hover > button svg {
 }
 
 /* ======button==== */
-.i::before {
-  content: "";
+.coolBeans {
+  /* border: 2px solid currentColor; */
+  /* border-radius: 3rem; */
+  /* color: #ff0; */
+  /* font-family: roboto; */
+  /* font-size: 4rem; */
+  /* font-weight: 100; */
+  overflow: hidden;
+  /* padding: 2rem 2rem; */
+  position: relative;
+  text-decoration: none;
+  /* background-color: #000; */
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  width: 0px;
-  height: 0px;
-  opacity: 20%;
-  background: white;
-/*   background: #3B82F6; */
-  /* Centering */
-  top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+  top: -10px;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+  
+  padding: 100px;
 }
-
-.i:hover:before {
-  animation: anim-in 0.7s forwards ease-out;
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+  
+  height: 100%;
 }
-
-@keyframes anim-in {
-  100% {
-    opacity: 0%;
-    border-radius: 0;
-    width: 600px;
-    height: 600px;
-  }
-  0% {
-    width: 0px;
-    height: 0px;
-    border-radius: 100%;
-    opacity: 20%;
-  }
+.coolBeans:hover {
+  border-radius: 0.5rem;
+  color: #000;
+  height: 100%;
+  will-change: transform;
+  /* font-weight: 900; */
 }
-
