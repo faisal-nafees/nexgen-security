@@ -13,12 +13,9 @@ body {
 /* Navbar Background Change On Scroll  */
 
 header.black {
-  background: #fff;
+  background: rgba(255,255,255,0.8);
+  
   transition: all 1s ease-in-out;
-  /* height: 100px; */
-
-
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -40,17 +37,29 @@ header.black .consultation-btn{
   border-radius: 0.5rem;
 }
 
-/* header.black button span {
+header.black button span,
+header.black ul .faq span {
 font-size: 14px;
-transition: all 2s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+header.black ul li a.coolBeans{
+  font-size: 14px;
+transition: all 1s ease-in-out;
+}
+
+header.black .nav-bg{
+  height: 72px;
+transition: all 1s ease-in-out;
 
 }
+
 header.black img {
-transition: all 2s ease-in-out;
+transition: all 1s ease-in-out;
 
   height: 70px;
   width: 70px;
-} */
+}
 
 /* Below styles fake what can be achieved with the tailwind config
      you need to add the group-hover variant to scale and define your custom
@@ -113,7 +122,7 @@ li:hover > button svg {
   background-color: var(--secondary-color);
 }
 
-/* Testimonial */
+/*============ Testimonial ==========*/
 .overlay::before,
 .overlay::after {
   content: "";
@@ -136,10 +145,6 @@ li:hover > button svg {
   font-weight: 500;
 }
 
-.swiper-nav-btn:hover {
-  color: #679cff;
-}
-
 .swiper-pagination-bullet {
   background-color: var(--secondary-color);
   opacity: 1;
@@ -153,17 +158,9 @@ li:hover > button svg {
 
 /* ======button==== */
 .coolBeans {
-  /* border: 2px solid currentColor; */
-  /* border-radius: 3rem; */
-  /* color: #ff0; */
-  /* font-family: roboto; */
-  /* font-size: 4rem; */
-  /* font-weight: 100; */
   overflow: hidden;
-  /* padding: 2rem 2rem; */
   position: relative;
   text-decoration: none;
-  /* background-color: #000; */
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   z-index: 0;
@@ -196,5 +193,4 @@ li:hover > button svg {
   color: #000;
   height: 100%;
   will-change: transform;
-  /* font-weight: 900; */
 }
