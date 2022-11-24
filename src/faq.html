@@ -6,214 +6,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Swiper CSS -->
+    <!--============== Swiper CSS ==============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <!-- npx tailwindcss -i ./src/input.css -o ./src/style.css --watch -->
-    <!-- CSS -->
+
+    <!--============== CSS ==============-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
-
-    <title>Nexgen</title>
-
+    <title>NexGen Enablers
+    </title>
 </head>
 
 <body class="overflow-x-hidden w-screen">
-    <!-- navbar goes here -->
+    <div id="loader" class="center"></div>
+    <!--============== navbar goes here ==============-->
     <header class="bg-white fixed top-0 z-50 w-screen shadow-lg">
         <nav class="relative">
             <div class="max-w-7xl mx-auto px-4 md:px-8 ">
-                <div class="flex justify-between h-24 items-center nav-bg">
+                <div class="flex justify-between h-28 items-center nav-bg">
                     <div class="flex md:space-x-7">
-                        <!-- Primary Navbar items -->
+                        <!--============== Primary Navbar items ==============-->
                         <div class="hidden lg:flex items-center space-x-1">
-                            <div @click.away="open1 = false" class="" x-data="{ open1: false }">
-                                <button @click="open1 = !open1"
-                                    class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
-                                    <span class=" text-lg font-semibold">HOW WE DO</span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20"
-                                        :class="{'rotate-180': open1, 'rotate-0': !open1}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <div x-show="open1" x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="transform opacity-0 scale-95"
-                                    x-transition:enter-end="transform opacity-100 scale-100"
-                                    x-transition:leave="transition ease-in duration-75"
-                                    x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95"
-                                    class=" absolute left-0 w-screen mt-[14px] border-t-2  shadow-lg ">
-                                    <div class="px-2 pt-2 pb-4 bg-white  dark-mode:bg-gray-700">
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Strategy And Assessment</p>
-                                                    <p class="text-sm">Easy customization</p>
-                                                </div>
-                                            </a>
+                            <div class="group inline-block ">
+                                <button class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline">
+            <span class="font-semibold uppercase">how we do</span>
+            <svg
+              class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+                                <ul class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen border-t-2 shadow-lg">
+                                    <li class="rounded-sm px-3 py-1">
+                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="strategy.html">
+                                            <div class="bg-teal-500 text-white rounded-lg p-3">
+                                                <img src="../image/icons8-group-of-projects-50.png" alt="">
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="font-semibold">Strategy And Assessment</p>
+                                                <p class="text-sm pt-2 text-gray-600">Easy customization</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="rounded-sm px-3 py-1">
+                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="implementation.html">
+                                            <div class="bg-teal-500 text-white rounded-lg p-3">
+                                                <img src="../image/icons8-design-50.png" alt="">
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="font-semibold">Design And Implementation</p>
+                                                <p class="text-sm pt-2 text-gray-600">
+                                                    Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Design And Implementation</p>
-                                                    <p class="text-sm">Check your latest comments</p>
-                                                </div>
-                                            </a>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="rounded-sm relative px-3 py-1">
+                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="innovation.html">
+                                            <div class="bg-teal-500 text-white rounded-lg p-3">
+                                                <img src="../image/icons8-innovation-50.png" alt="" height="140" width="140">
+                                            </div>
+                                            <div class="ml-3">
+                                                <p class="font-semibold">Innovation And Manage Solution</p>
+                                                <p class="text-sm pt-2 text-gray-600">
+                                                    Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Innovation And Manage Solution</p>
-                                                    <p class="text-sm">Take a look at your statistics</p>
-                                                </div>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
                         <div class="static lg:absolute top-0 lg:right-[53%]">
-                            <!-- Website Logo -->
-                            <a href="../index.html"
-                                class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-0 md:mb-0">
-                                <img src="../image/logo.png" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20" />
+                            <!--============== Website Logo ==============-->
+                            <a href="../index.html" class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-0 md:mb-0 ">
+                                <img src="../image/logo.png" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20 z-10 logo" />
                             </a>
                         </div>
                     </div>
-                    <!-- Secondary Navbar items -->
+                    <!--============== Secondary Navbar items ==============-->
                     <div class="hidden lg:flex items-center ">
 
-                        <div @click.away="open = false" class="" x-data="{ open: false }">
-                            <button @click="open = !open"
-                                class="flex flex-row text-primaryColor items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0 md:ml-4   focus:outline-none focus:shadow-outline">
-                                <span class=" text-lg font-semibold">WHAT WE DO</span>
-                                <svg fill="currentColor" viewBox="0 0 20 20"
-                                    :class="{'rotate-180': open, 'rotate-0': !open}"
-                                    class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </button>
-                            <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                                x-transition:enter-start="transform opacity-0 scale-95"
-                                x-transition:enter-end="transform opacity-100 scale-100"
-                                x-transition:leave="transition ease-in duration-75"
-                                x-transition:leave-start="transform opacity-100 scale-100"
-                                x-transition:leave-end="transform opacity-0 scale-95"
-                                class=" absolute left-0 w-screen mt-[14px] border-t-2  shadow-lg ">
-                                <div class="px-2 pt-2 pb-4 bg-white  dark-mode:bg-gray-700">
-                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                            href="#">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    class="md:h-10 md:w-10 h-4 w-4">
-                                                    <path
-                                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Branding-As-A-Solution</p>
-                                                <p class="text-sm">Easy customization</p>
-                                            </div>
-                                        </a>
-
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                            href="#">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    class="md:h-10 md:w-10 h-4 w-4">
-                                                    <path
-                                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Automation-As-A-Solution</p>
-                                                <p class="text-sm">Check your latest comments</p>
-                                            </div>
-                                        </a>
-
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                            href="#">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                    class="md:h-10 md:w-10 h-4 w-4">
-                                                    <path
-                                                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Cyber Security Solution</p>
-                                                <p class="text-sm">Take a look at your statistics</p>
-                                            </div>
-                                        </a>
-
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="group inline-block">
+                            <button class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline">
+            <span class="font-semibold uppercase">who we do</span>
+            <svg
+              class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+              />
+            </svg>
+          </button>
+                            <ul class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen  border-t-2 shadow-lg">
+                                <li class="rounded-sm px-3 py-1">
+                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <div class="bg-teal-500 text-white rounded-lg p-3">
+                                            <img src="../image/icons8-laptop-coding-50.png" alt="" height="140" width="140">
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="font-semibold">We build brand</p>
+                                            <p class="text-sm pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging right
+                                                technology focused on your success.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rounded-sm px-3 py-1">
+                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <div class="bg-teal-500 text-white rounded-lg p-3">
+                                            <img src="../image/icons8-chipping-50.png" alt="" height="140" width="140">
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="font-semibold">We automate your business processes & operations</p>
+                                            <p class="text-sm pt-2 text-gray-600">
+                                                Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation as a service for companies of all sizes.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="rounded-sm relative px-3 py-1">
+                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                                        <div class="bg-teal-500 text-black rounded-lg p-3">
+                                            <img src="../image/icons8-security-shield-green-50.png" alt="" height="100" width="100">
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="font-semibold">We know how to protect your IT assets & infrastructure</p>
+                                            <p class="text-sm pt-2 text-gray-600">
+                                                Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
 
                         <ul class="flex items-center header-links gap-4">
-                            <li class="rounded-sm px-3 py-1  text-primaryColor faq">
-                                <a href="#"><span class="text-lg font-semibold">WHO WE HELP</span></a>
+                            <li class="rounded-sm px-3 py-1 text-primaryColor
+                                    faq">
+                                <a href="#"><span class="
+                                            font-semibold">WHO WE HELP</span></a>
                             </li>
-                            <li class="rounded-sm px-3 py-1   text-primaryColor faq">
-                                <a href="faq.html"><span class="text-lg font-semibold">FAQ's</span></a>
+                            <li class="rounded-sm px-3 py-1 text-primaryColor
+                                    faq">
+                                <a href="faq.html"><span class="
+                                            font-semibold">FAQ's</span></a>
                             </li>
-                           
                             <li class="overflow-hidden py-2 rounded-lg bg-primaryColor">
                                 <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
                             </li>
                         </ul>
-
-                        </ul>
                     </div>
                     <!-- Mobile menu button -->
-                    <div class="lg:hidden flex items-center">
-                        
+                    <div class="lg:hidden flex items-center gap-4">
+
                         <div class="hidden md:block overflow-hidden py-2 rounded-lg bg-primaryColor">
                             <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
                         </div>
@@ -229,14 +185,13 @@
                     </div>
                 </div>
             </div>
-            <!-- mobile menu -->
-            <div class="hidden mobile-menu bg-white pb-1 pt-20 absolute w-screen top-0 z-[-1]">
-                <ul class="">
-                    <li class="active">
+            <!--============== mobile menu ==============-->
+            <div class="hidden mobile-menu bg-white shadow-lg pb-1 pt-24 absolute w-screen top-0 z-[-1]">
+                <ul>
+                    <li class="border-b-[1px] border-gray-500">
                         <div class="group inline-block">
                             <div @click.away="open1 = false" class="" x-data="{ open1: false }">
-                                <button @click="open1 = !open1"
-                                    class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
+                                <button @click="open1 = !open1" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
                                     <span class=" text-lg font-semibold">HOW WE DO</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open1, 'rotate-0': !open1}"
@@ -246,63 +201,39 @@
                                             clip-rule="evenodd"></path>
                                     </svg>
                                 </button>
-                                <div x-show="open1" x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="transform opacity-0 scale-95"
-                                    x-transition:enter-end="transform opacity-100 scale-100"
-                                    x-transition:leave="transition ease-in duration-75"
-                                    x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95"
-                                    class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
-                                    <div class="px-2 pt-2 pb-4 bg-white  dark-mode:bg-gray-700">
+                                <div x-show="open1" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
+                                    x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
+                                    <div class="px-2 pt-2 pb-4 bg-white  ">
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="strategy.html">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-group-of-projects-50.png" alt="">
                                                 </div>
                                                 <div class="ml-3">
                                                     <p class="font-semibold">Strategy And Assessment</p>
-                                                    <p class="text-sm">Easy customization</p>
+                                                    <p class="text-sm pt-2 text-gray-600">Easy customization</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="implementation.html">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-design-50.png" alt="">
                                                 </div>
                                                 <div class="ml-3">
                                                     <p class="font-semibold">Design And Implementation</p>
-                                                    <p class="text-sm">Check your latest comments</p>
+                                                    <p class="text-sm pt-2 text-gray-600">Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
+</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="innovation.html">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-innovation-50.png" alt="">
                                                 </div>
                                                 <div class="ml-3">
                                                     <p class="font-semibold">Innovation And Manage Solution</p>
-                                                    <p class="text-sm">Take a look at your statistics</p>
+                                                    <p class="text-sm pt-2 text-gray-600">Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
+</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -311,12 +242,11 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="border-b-[1px] border-gray-500">
                         <div class="group inline-block">
                             <div @click.away="open = false" class="" x-data="{ open: false }">
-                                <button @click="open = !open"
-                                    class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white    md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
-                                    <span class="text-lg font-semibold">WHAT WE DO</span>
+                                <button @click="open = !open" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
+                                    <span class="text-lg font-semibold uppercase">what we do</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open, 'rotate-0': !open}"
                                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -325,63 +255,39 @@
                                             clip-rule="evenodd"></path>
                                     </svg>
                                 </button>
-                                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="transform opacity-0 scale-95"
-                                    x-transition:enter-end="transform opacity-100 scale-100"
-                                    x-transition:leave="transition ease-in duration-75"
-                                    x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95"
-                                    class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
-                                    <div class="px-2 pt-2 pb-4 bg-white  dark-mode:bg-gray-700">
+                                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
+                                    x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
+                                    <div class="px-2 pt-2 pb-4 bg-white  ">
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-laptop-coding-50.png" alt="" height="140" width="140">
                                                 </div>
                                                 <div class="ml-3">
-                                                    <p class="font-semibold">Branding-As-A-Solution</p>
-                                                    <p class="text-sm">Easy customization</p>
+                                                    <p class="font-semibold">We build brand</p>
+                                                    <p class="text-sm pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging
+                                                        right technology focused on your success.</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-chipping-50.png" alt="" height="140" width="140">
                                                 </div>
                                                 <div class="ml-3">
-                                                    <p class="font-semibold">Automation-As-A-Solution</p>
-                                                    <p class="text-sm">Check your latest comments</p>
+                                                    <p class="font-semibold">We automate your business processes & operations</p>
+                                                    <p class="text-sm pt-2 text-gray-600">Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation
+                                                        as a service for companies of all sizes.</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                href="#">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
                                                 <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <svg fill="bg-black" stroke="currentColor" stroke-linecap="round"
-                                                        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                                        class="md:h-10 md:w-10 h-4 w-4">
-                                                        <path
-                                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-                                                        </path>
-                                                    </svg>
+                                                    <img src="../image/icons8-security-shield-green-50.png" alt="" height="100" width="100">
                                                 </div>
                                                 <div class="ml-3">
-                                                    <p class="font-semibold">Cyber Security Solution</p>
-                                                    <p class="text-sm">Take a look at your statistics</p>
+                                                    <p class="font-semibold">We know how to protect your IT assets & infrastructure</p>
+                                                    <p class="text-sm pt-2 text-gray-600">Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.</p>
                                                 </div>
                                             </a>
                                         </div>
@@ -391,24 +297,20 @@
                         </div>
                     </li>
 
-                    <li>
-                        <div class="px-4 py-1  font-semibold text-primaryColor faq">
+                    <li class="border-b-[1px] border-gray-500">
+                        <div class="px-4 py-2 font-semibold text-primaryColor faq">
 
-                            <a href="#"><span class="text-lg font-semibold">Who We Help</span></a>
+                            <a href="#"><span class="font-semibold uppercase text-[14px]">Who We Help</span></a>
                         </div>
                     </li>
                     <li>
-                        <div class="px-4 py-1  font-semibold text-primaryColor faq">
+                        <div class="px-4 py-2  font-semibold text-primaryColor faq">
 
-                            <a href="faq.html"><span class="text-lg font-semibold">FAQ's</span></a>
+                            <a href="faq.html"><span class="font-semibold text-[14px]">FAQ's</span></a>
                         </div>
                     </li>
                 </ul>
-                <!-- <div class="flex justify-center md:hidden lg:text-base mb-3  font-bold  text-white uppercase">
-                    <a href="contactus.html"
-                        class="bg-primaryColor hover:bg-secondaryColor hover:text-primaryColor py-2 px-4 rounded-lg">Free
-                        Consultation</a>
-                </div> -->
+
                 <div class="flex justify-center overflow-hidden md:hidden  rounded-lg ">
                     <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase bg-primaryColor lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
                 </div>
@@ -421,14 +323,12 @@
     <section class="pt-32 md:pb-20 pb-12">
         <div class="">
             <div class="mx-auto text-center text-xl text-gray-900 lg:text-4xl  mb-3 font-bold  pt-2 uppercase">
-                Frequently Asked
-                Questions </div>
+                Frequently Asked Questions </div>
             <div class="mx-auto text-center w-32 border-solid border-b-4 border-yellow-500 h-1"></div>
         </div>
 
         <div class="mt-8 opacity-75">
-            <svg class="w-1/2 max-w-screen-sm mx-auto" xmlns="http://www.w3.org/2000/svg"
-                id="ffb55883-6880-4c99-84fd-4a8eccb5f463" data-name="Layer 1" viewBox="0 0 887.5 444.00977">
+            <svg class="w-1/2 max-w-screen-sm mx-auto" xmlns="http://www.w3.org/2000/svg" id="ffb55883-6880-4c99-84fd-4a8eccb5f463" data-name="Layer 1" viewBox="0 0 887.5 444.00977">
                 <title>faq</title>
                 <rect x="458.1306" y="29.39525" width="395.03806" height="197.51903" fill="#e6e6e6" />
                 <path
@@ -540,11 +440,10 @@
             </svg>
         </div>
         <div>
-           
+
             <dl class="mt-8 mx-auto max-w-screen-sm lg:max-w-screen-lg flex flex-col lg:flex-row lg:flex-wrap">
                 <div class="lg:w-1/2">
-                    <div
-                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                    <div class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
                                 <div class="text-primaryColor text-md md:text-lg font-medium ">
@@ -584,8 +483,7 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <div
-                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                    <div class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
                                 <div class="text-primaryColor text-md md:text-lg font-medium">
@@ -625,8 +523,7 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <div
-                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                    <div class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
                                 <div class="text-primaryColor text-md md:text-lg font-medium">
@@ -666,8 +563,7 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2">
-                    <div
-                        class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
+                    <div class="question-and-answer select-none cursor-pointer border-2 mx-8 my-3 px-6 py-4 rounded-lg text-sm group">
                         <dt class="question">
                             <div class="flex justify-between">
                                 <div class="text-primaryColor text-md md:text-lg font-medium">
@@ -712,11 +608,7 @@
         </div>
     </section>
 
-
-    <!--=========== end faq ============-->
-
-
-    <!-- ========Footer====== -->
+    <!-- ======================Footer==================== -->
     <footer class="relative bg-primaryColor pb-8 pt-12 w-screen">
 
         <div class="flex flex-col md:flex-row md:space-x-10 mx-6
@@ -735,7 +627,7 @@
                         </svg>
                         <span>Major Server 1</span>
                     </a>
-                    <a class="flex hover:text-secondaryColor items-center
+                <a class="flex hover:text-secondaryColor items-center
                         border-b border-solid border-white py-2 text-xs
                         md:text-base" href=""><svg
                             xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -747,7 +639,7 @@
                             </svg>
                             <span>Major Server 2</span>
                         </a>
-                        <a class="flex hover:text-secondaryColor
+                <a class="flex hover:text-secondaryColor
                             items-center border-b border-solid border-white
                             py-2 text-xs md:text-base" href=""><svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -760,24 +652,19 @@
                                 </svg>
                                 <span>Major Server 3</span>
                             </a>
-                            <a class="flex hover:text-secondaryColor
+                <a class="flex hover:text-secondaryColor
                                 items-center border-b border-solid
-                                border-white py-2 text-xs md:text-base"
-                                href="">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="currentColor" class="w-3 h-3">
+                                border-white py-2 text-xs md:text-base" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
                                     <path stroke-linecap="round"
                                         stroke-linejoin="round" d="M8.25
                                         4.5l7.5 7.5-7.5 7.5" />
                                     </svg>
-                                    <span>Major Server 4</span>
-                                </a>
-                                <a class="flex hover:text-secondaryColor
+                    <span>Major Server 4</span>
+                </a>
+                <a class="flex hover:text-secondaryColor
                                     items-center border-b border-solid
-                                    border-white py-2 text-xs md:text-base"
-                                    href=""><svg
+                                    border-white py-2 text-xs md:text-base" href=""><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 24 24"
                                         stroke-width="1.5"
@@ -790,11 +677,11 @@
                                         <span>Major Server 5</span>
                                     </a>
 
-                                </div>
-                                <div class="flex flex-col w-full">
-                                    <h2 class="mb-4 mt-12 md:mt-0 text-sm
+            </div>
+            <div class="flex flex-col w-full">
+                <h2 class="mb-4 mt-12 md:mt-0 text-sm
                                         uppercase">Quick links</h2>
-                                    <a class="flex hover:text-secondaryColor
+                <a class="flex hover:text-secondaryColor
                                         items-center border-b border-solid
                                         border-white py-2 text-xs
                                         md:text-base" href="#blog"><svg
@@ -809,12 +696,11 @@
                                                 7.5" />
                                             </svg>
                                             <span>Blog</span></a>
-                                        <a class="flex
+                <a class="flex
                                             hover:text-secondaryColor
                                             items-center border-b
                                             border-solid border-white py-2
-                                            text-xs md:text-base"
-                                            href="#career"><svg
+                                            text-xs md:text-base" href="#career"><svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 fill="none" viewBox="0 0 24
                                                 24" stroke-width="1.5"
@@ -826,12 +712,11 @@
                                                     7.5" />
                                                 </svg>
                                                 <span>Career</span></a>
-                                            <a class="flex
+                <a class="flex
                                                 hover:text-secondaryColor
                                                 items-center border-b
                                                 border-solid border-white
-                                                py-2 text-xs md:text-base"
-                                                href="#case-studies"><svg
+                                                py-2 text-xs md:text-base" href="#case-studies"><svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     fill="none" viewBox="0 0
                                                     24 24"
@@ -845,13 +730,12 @@
                                                         7.5-7.5 7.5" />
                                                     </svg>
                                                     <span>Case Studies</span></a>
-                                                <a class="flex
+                <a class="flex
                                                     hover:text-secondaryColor
                                                     items-center border-b
                                                     border-solid
                                                     border-white py-2
-                                                    text-xs md:text-base"
-                                                    href="#terms-privacy"><svg
+                                                    text-xs md:text-base" href="#terms-privacy"><svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         fill="none"
                                                         viewBox="0 0 24 24"
@@ -866,109 +750,93 @@
                                                         </svg>
                                                         <span>Terms &
                                                             Privacy</span></a>
-                                                </div>
-                                                <div class="flex flex-col
+            </div>
+            <div class="flex flex-col
                                                     w-full">
-                                                    <div>
-                                                        <h2 class="mb-4
+                <div>
+                    <h2 class="mb-4
                                                             mt-12 md:mt-0
-                                                            text-sm">QUINTOR
-                                                            AMERSFOORT</h2>
-                                                        <p class="w-1/2
+                                                            text-sm">QUINTOR AMERSFOORT
+                    </h2>
+                    <p class="w-1/2
                                                             text-xs
                                                             md:text-sm">
-                                                            Moon Lander 14m
-                                                            3824 MP
-                                                            Amersfoort +31
-                                                            33 820 0276
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <h2 class="py-5
+                        Moon Lander 14m 3824 MP Amersfoort +31 33 820 0276
+                    </p>
+                </div>
+                <div>
+                    <h2 class="py-5
                                                             text-sm mt-5
-                                                            md:mt-10">QUINTOR
-                                                            DEN BOSCH</h2>
-                                                        <p class="w-1/2
+                                                            md:mt-10">QUINTOR DEN BOSCH</h2>
+                    <p class="w-1/2
                                                             text-xs
                                                             md:text-sm">
-                                                            Havensingel 1
-                                                            5211 TX Den
-                                                            Bosch +31 73 203
-                                                            4067
-                                                        </p>
-                                                    </div>
+                        Havensingel 1 5211 TX Den Bosch +31 73 203 4067
+                    </p>
+                </div>
 
-                                                </div>
-                                                <div class="flex flex-col
+            </div>
+            <div class="flex flex-col
                                                     w-full">
-                                                    <div>
-                                                        <h2 class="mb-4
+                <div>
+                    <h2 class="mb-4
                                                             mt-12 md:mt-0
-                                                            text-sm">QUINTOR
-                                                            DEVENTER</h2>
-                                                        <p class="w-1/2
+                                                            text-sm">QUINTOR DEVENTER
+                    </h2>
+                    <p class="w-1/2
                                                             text-xs
-                                                            md:text-sm">Zutphenseweg
-                                                            23 7418 AG
-                                                            Deventer</p>
-                                                    </div>
-                                                    <div class="mb-8">
-                                                        <h2 class="py-5
+                                                            md:text-sm">Zutphenseweg 23 7418 AG Deventer
+                    </p>
+                </div>
+                <div class="mb-8">
+                    <h2 class="py-5
                                                             text-sm mt-5
-                                                            md:mt-10">QUINTOR
-                                                            DEVENTER</h2>
-                                                        <p class="w-1/2
+                                                            md:mt-10">QUINTOR DEVENTER
+                    </h2>
+                    <p class="w-1/2
                                                             text-xs
-                                                            md:text-sm">Zutphenseweg
-                                                            23 7418 AG
-                                                            Deventer</p>
-                                                    </div>
-                                                    <div class="absolute
+                                                            md:text-sm">Zutphenseweg 23 7418 AG Deventer
+                    </p>
+                </div>
+                <div class="absolute
                                                         md:static top-[16px]
                                                         right-[14px] flex
                                                         justify-center w-20
                                                         h-20 bg-white
                                                         rounded-full">
-                                                        <a
-                                                            href="../index.html">
-                                                            <img
-                                                                src="../image/logo1.jpg"
-                                                                alt="logo"
-                                                                class="w">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                    <a href="../index.html">
+                        <img src="../image/logo1.jpg" alt="logo" class="w">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-                                            <hr class="my-6 border-gray-200
+        <hr class="my-6 border-gray-200
                                                 sm:mx-auto
                                                 dark:border-gray-700
                                                 lg:my-8" />
-                                            <div class="sm:flex
+        <div class="sm:flex
                                                 sm:items-center
                                                 sm:justify-evenly ml-6">
-                                                <span class="text-sm
+            <span class="text-sm
                                                     text-white
                                                     sm:text-center
                                                     dark:text-gray-400">©
                                                     2022 <a
                                                         href="https://flowbite.com/"
-                                                        class="hover:underline">Nexgen™</a>.
+                                                        class="hover:underline">NexGen Enablers Inc.
+</a>.
                                                     All Rights Reserved.
                                                 </span>
-                                                <div class="flex mt-4 gap-3
+            <div class="flex mt-4 gap-3
                                                     md:space-x-6
                                                     sm:justify-center
                                                     sm:mt-0">
-                                                    <a href="#"
-                                                        class="text-white
+                <a href="#" class="text-white
                                                         hover:text-secondaryColor
                                                         dark:hover:text-white">
-                                                        <svg class="w-6 h-6"
-                                                            fill="currentColor"
-                                                            viewBox="0 0 24
-                                                            24"
-                                                            aria-hidden="true">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24
+                                                            24" aria-hidden="true">
                                                             <path
                                                                 fill-rule="evenodd"
                                                                 d="M22
@@ -991,20 +859,15 @@
                                                                 clip-rule="evenodd"
                                                                 />
                                                             </svg>
-                                                            <span
-                                                                class="sr-only">Facebook
+                    <span class="sr-only">Facebook
                                                                 page</span>
-                                                        </a>
-                                                        <a href="#"
-                                                            class="text-white
+                </a>
+                <a href="#" class="text-white
                                                             hover:text-secondaryColor
                                                             dark:hover:text-white">
-                                                            <svg class="w-6
-                                                                h-6"
-                                                                fill="currentColor"
-                                                                viewBox="0 0
-                                                                24 24"
-                                                                aria-hidden="true">
+                    <svg class="w-6
+                                                                h-6" fill="currentColor" viewBox="0 0
+                                                                24 24" aria-hidden="true">
                                                                 <path
                                                                     fill-rule="evenodd"
                                                                     d="M12.315
@@ -1107,21 +970,15 @@
                                                                     clip-rule="evenodd"
                                                                     />
                                                                 </svg>
-                                                                <span
-                                                                    class="sr-only">Instagram
+                    <span class="sr-only">Instagram
                                                                     page</span>
-                                                            </a>
-                                                            <a href="#"
-                                                                class="text-white
+                </a>
+                <a href="#" class="text-white
                                                                 hover:text-secondaryColor
                                                                 dark:hover:text-white">
-                                                                <svg
-                                                                    class="w-6
-                                                                    h-6"
-                                                                    fill="currentColor"
-                                                                    viewBox="0
-                                                                    0 24 24"
-                                                                    aria-hidden="true">
+                    <svg class="w-6
+                                                                    h-6" fill="currentColor" viewBox="0
+                                                                    0 24 24" aria-hidden="true">
                                                                     <path
                                                                         d="M8.29
                                                                         20.251c7.547
@@ -1186,19 +1043,18 @@
                                                                         1.84"
                                                                         />
                                                                     </svg>
-                                                                    <span
-                                                                        class="sr-only">Twitter
+                    <span class="sr-only">Twitter
                                                                         page</span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </footer>
+                </a>
+            </div>
+        </div>
+    </footer>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
-        (function () {
+        (function() {
             var s1 = document.createElement("script"),
                 s0 = document.getElementsByTagName("script")[0];
             s1.async = true;
@@ -1209,18 +1065,33 @@
         })();
     </script>
 
+    <!--================== Loading ==================-->
+    <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
     <script src="../script/script.js"></script>
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-    <!-- <script src="script/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $('.question-and-answer').click(function () {
+        $('.question-and-answer').click(function() {
             $(this).find(".answer").toggleClass("hidden")
             $(this).find(".question-chevron").toggleClass("hidden")
         })
