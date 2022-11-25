@@ -186,13 +186,13 @@
                 </div>
             </div>
             <!--============== mobile menu ==============-->
-            <div class="hidden mobile-menu bg-white shadow-lg pb-1 pt-24 absolute w-screen top-0 z-[-1]">
+           <div class="hidden mobile-menu bg-white shadow-lg pb-1 pt-24 absolute w-screen top-0 z-[-1]">
                 <ul>
                     <li class="border-b-[1px] border-gray-500">
                         <div class="group inline-block">
                             <div @click.away="open1 = false" class="" x-data="{ open1: false }">
                                 <button @click="open1 = !open1" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
-                                    <span class=" text-lg font-semibold">HOW WE DO</span>
+                                    <span class="font-semibold uppercase">How we do</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open1, 'rotate-0': !open1}"
                                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -205,34 +205,34 @@
                                     x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
                                     <div class="px-2 pt-2 pb-4 bg-white  ">
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="strategy.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-group-of-projects-50.png" alt="">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="strategy.html">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                    <img src="../image/icons8-group-of-projects-50.png" alt="" height="60" width="60">
                                                 </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Strategy And Assessment</p>
-                                                    <p class="text-sm pt-2 text-gray-600">Easy customization</p>
-                                                </div>
-                                            </a>
-
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="implementation.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-design-50.png" alt="">
-                                                </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Design And Implementation</p>
-                                                    <p class="text-sm pt-2 text-gray-600">Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
-</p>
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">Strategy And Assessment</p>
+                                                    <p class="text-xs pt-2 text-gray-600">Easy customization</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="innovation.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-innovation-50.png" alt="">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="implementation.html">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                   <img src="../image/icons8-design-50.png" alt="" height="60" width="60">
                                                 </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">Innovation And Manage Solution</p>
-                                                    <p class="text-sm pt-2 text-gray-600">Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">Design And Implementation</p>
+                                                    <p class="text-xs pt-2 text-gray-600">Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
+                                                    </p>
+                                                </div>
+                                            </a>
+
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="innovation.html">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                    <img src="../image/icons8-innovation-50.png" alt="" height="100" width="100">
+                                                </div>
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">Innovation And Manage Solution</p>
+                                                    <p class="text-xs pt-2 text-gray-600">Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
 </p>
                                                 </div>
                                             </a>
@@ -246,7 +246,7 @@
                         <div class="group inline-block">
                             <div @click.away="open = false" class="" x-data="{ open: false }">
                                 <button @click="open = !open" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
-                                    <span class="text-lg font-semibold uppercase">what we do</span>
+                                    <span class="font-semibold uppercase">what we do</span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open, 'rotate-0': !open}"
                                         class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -259,35 +259,35 @@
                                     x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
                                     <div class="px-2 pt-2 pb-4 bg-white  ">
                                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-laptop-coding-50.png" alt="" height="140" width="140">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                    <img src="../image/icons8-laptop-coding-50.png" alt="" height="80" width="80">
                                                 </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">We build brand</p>
-                                                    <p class="text-sm pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">We build brand</p>
+                                                    <p class="text-xs pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging
                                                         right technology focused on your success.</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-chipping-50.png" alt="" height="140" width="140">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                     <img src="../image/icons8-chipping-50.png" alt="" height="80" width="80">
                                                 </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">We automate your business processes & operations</p>
-                                                    <p class="text-sm pt-2 text-gray-600">Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">We automate your business processes & operations</p>
+                                                    <p class="text-xs pt-2 text-gray-600">Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation
                                                         as a service for companies of all sizes.</p>
                                                 </div>
                                             </a>
 
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                    <img src="../image/icons8-security-shield-green-50.png" alt="" height="100" width="100">
+                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
+                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
+                                                    <img src="../image/icons8-security-shield-green-50.png"  height="60" width="60" >
                                                 </div>
-                                                <div class="ml-3">
-                                                    <p class="font-semibold">We know how to protect your IT assets & infrastructure</p>
-                                                    <p class="text-sm pt-2 text-gray-600">Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.</p>
+                                                <div class="ml-3 w-[80%]">
+                                                    <p class="text-sm font-semibold">We know how to protect your IT assets & infrastructure</p>
+                                                    <p class="text-xs pt-2 text-gray-600">Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.</p>
                                                 </div>
                                             </a>
                                         </div>
