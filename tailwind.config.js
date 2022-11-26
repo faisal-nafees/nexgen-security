@@ -9,9 +9,7 @@ module.exports = {
       lightGray: "#e9ecef",
     },
     extend: {
-      backgroundImage: {
-        'hero-video':"url('/image/hero.mp4')"
-      }
+      
     },
   },
   plugins: [],

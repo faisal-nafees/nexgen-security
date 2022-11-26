@@ -23,310 +23,559 @@
     <div id="loader" class="center"></div>
     <!--============== navbar goes here ==============-->
     <header class="bg-white fixed top-0 z-50 w-screen shadow-lg">
-        <nav class="relative">
-            <div class="max-w-7xl mx-auto px-4 md:px-8 ">
-                <div class="flex justify-between h-20 lg:h-24 items-center nav-bg">
-                    <div class="flex md:space-x-7">
-                        <!--============== Primary Navbar items ==============-->
-                        <div class="hidden lg:flex items-center space-x-1">
-                            <div class="group inline-block ">
-                                <button class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline">
-            <span class="font-semibold uppercase">how we do</span>
-            <svg
-              class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-              />
-            </svg>
-          </button>
-                                <ul class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen border-t-2 shadow-lg">
-                                    <li class="rounded-sm px-3 py-1">
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="strategy.html">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <img src="../image/icons8-group-of-projects-50.png" alt="">
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Strategy And Assessment</p>
-                                                <p class="text-sm pt-2 text-gray-600">We
-                  build websites that convert your visitors into loyal customers
-                  who put trust on you & pay you.</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="rounded-sm px-3 py-1">
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="implementation.html">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <img src="../image/icons8-design-50.png" alt="">
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Design And Implementation</p>
-                                                <p class="text-sm pt-2 text-gray-600">
-                                                    Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
-
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="rounded-sm relative px-3 py-1">
-                                        <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="innovation.html">
-                                            <div class="bg-teal-500 text-white rounded-lg p-3">
-                                                <img src="../image/icons8-innovation-50.png" alt="" height="140" width="140">
-                                            </div>
-                                            <div class="ml-3">
-                                                <p class="font-semibold">Innovation And Manage Solution</p>
-                                                <p class="text-sm pt-2 text-gray-600">
-                                                    Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
-
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+      <nav class="relative">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+          <div class="flex justify-between h-20 lg:h-24 items-center nav-bg">
+            <div class="flex md:space-x-7">
+              
+              <!--============== Primary Navbar items ==============-->
+              <div class="hidden lg:flex items-center space-x-1">
+                <div class="group inline-block">
+                  <button
+                    class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen p-4 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
+                  >
+                    <span class="font-semibold uppercase">how we do</span>
+                    <svg
+                      class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen border-t-2 shadow-lg"
+                  >
+                    <li class="rounded-sm px-3 py-1">
+                      <a
+                        class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        href="strategy.html"
+                      >
+                        <div class="bg-teal-500 text-white rounded-lg p-3">
+                          <img
+                            src="../image/icons8-group-of-projects-50.png"
+                            alt=""
+                          />
                         </div>
-
-                        <div class="static lg:absolute top-0 lg:right-[53%]">
-                            <!--============== Website Logo ==============-->
-                            <a href="../index.html" class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-0 md:mb-0 ">
-                                <img src="../image/logo.png" alt="logo" class="lg:h-24 lg:w-24 h-20 w-20 z-10 logo" />
-                            </a>
+                        <div class="ml-3">
+                          <p class="font-semibold">Strategy And Assessment</p>
+                          <p class="text-sm pt-2 text-gray-600">
+                            We build websites that convert your visitors into
+                            loyal customers who put trust on you & pay you.
+                          </p>
                         </div>
-                    </div>
-                    <!--============== Secondary Navbar items ==============-->
-                    <div class="hidden lg:flex items-center ">
-
-                        <div class="group inline-block">
-                            <button class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline">
-            <span class="font-semibold uppercase">who we do</span>
-            <svg
-              class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-              />
-            </svg>
-          </button>
-                            <ul class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen  border-t-2 shadow-lg">
-                                <li class="rounded-sm px-3 py-1">
-                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                                            <img src="../image/icons8-laptop-coding-50.png" alt="" height="140" width="140">
-                                        </div>
-                                        <div class="ml-3">
-                                            <p class="font-semibold">We build brand</p>
-                                            <p class="text-sm pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging right
-                                                technology focused on your success.</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="rounded-sm px-3 py-1">
-                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                        <div class="bg-teal-500 text-white rounded-lg p-3">
-                                            <img src="../image/icons8-chipping-50.png" alt="" height="140" width="140">
-                                        </div>
-                                        <div class="ml-3">
-                                            <p class="font-semibold">We automate your business processes & operations</p>
-                                            <p class="text-sm pt-2 text-gray-600">
-                                                Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation as a service for companies of all sizes.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="rounded-sm relative px-3 py-1">
-                                    <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
-                                        <div class="bg-teal-500 text-black rounded-lg p-3">
-                                            <img src="../image/icons8-security-shield-green-50.png" alt="" height="100" width="100">
-                                        </div>
-                                        <div class="ml-3">
-                                            <p class="font-semibold">We know how to protect your IT assets & infrastructure</p>
-                                            <p class="text-sm pt-2 text-gray-600">
-                                                Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                      </a>
+                    </li>
+                    <li class="rounded-sm px-3 py-1">
+                      <a
+                        class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        href="implementation.html"
+                      >
+                        <div class="bg-teal-500 text-white rounded-lg p-3">
+                          <img src="../image/icons8-design-50.png" alt="" />
                         </div>
-
-                        <ul class="flex items-center header-links gap-4">
-                            <li class="rounded-sm px-3 py-1 text-primaryColor
-                                    faq">
-                                <a href="#"><span class="
-                                            font-semibold">WHO WE HELP</span></a>
-                            </li>
-                            <li class="rounded-sm px-3 py-1 text-primaryColor
-                                    faq">
-                                <a href="faq.html"><span class="lg:text-lg font-bold">FAQ's</span></a>
-                            </li>
-                            <li class="overflow-hidden py-2 rounded-lg bg-primaryColor">
-                                <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Mobile menu button -->
-                    <div class="lg:hidden flex items-center gap-4">
-
-                        <div class="hidden md:block overflow-hidden py-2 rounded-lg bg-primaryColor">
-                            <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
+                        <div class="ml-3">
+                          <p class="font-semibold">Design And Implementation</p>
+                          <p class="text-sm pt-2 text-gray-600">
+                            Post strategic assessments, In our second phase, we
+                            strive towards designing & implementing the right
+                            solutions for your business.
+                          </p>
                         </div>
-                        <button class="outline-none mobile-menu-button bg-secondaryColor p-2 rounded-lg">
-                            <svg class=" w-6 h-6 text-primaryColor " x-show="!showMenu" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
-
-
-                    </div>
+                      </a>
+                    </li>
+                    <li class="rounded-sm relative px-3 py-1">
+                      <a
+                        class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        href="innovation.html"
+                      >
+                        <div class="bg-teal-500 text-white rounded-lg p-3">
+                          <img
+                            src="../image/icons8-innovation-50.png"
+                            alt=""
+                            height="140"
+                            width="140"
+                          />
+                        </div>
+                        <div class="ml-3">
+                          <p class="font-semibold">
+                            Innovation And Managed Solution
+                          </p>
+                          <p class="text-sm pt-2 text-gray-600">
+                            Now that we have assessed your environment, its
+                            vulnerabilities and implemented appropriate
+                            solutions, it's high time now for us to chalk out
+                            strategies towards continuous service improvements &
+                            introduce innovations by providing managed
+                            solutions.
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+
+              <div class="static lg:absolute top-0 lg:right-[53%]">
+                <!--============== Website Logo ==============-->
+                <a
+                  href="../index.html"
+                  class="flex title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-0 md:mb-0"
+                >
+                  <img
+                    src="../image/logo.png"
+                    alt="logo"
+                    class="lg:h-24 lg:w-24 h-20 w-20 z-10 logo"
+                  />
+                </a>
+              </div>
             </div>
-            <!--============== mobile menu ==============-->
-           <div class="hidden mobile-menu bg-white shadow-lg pb-1 pt-24 absolute w-screen top-0 z-[-1]">
-                <ul>
-                    <li class="border-b-[1px] border-gray-500">
-                        <div class="group inline-block">
-                            <div @click.away="open1 = false" class="" x-data="{ open1: false }">
-                                <button @click="open1 = !open1" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
-                                    <span class="font-semibold uppercase">How we do</span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20"
-                                        :class="{'rotate-180': open1, 'rotate-0': !open1}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <div x-show="open1" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
-                                    <div class="px-2 pt-2 pb-4 bg-white  ">
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="strategy.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                    <img src="../image/icons8-group-of-projects-50.png" alt="" height="60" width="60">
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">Strategy And Assessment</p>
-                                                    <p class="text-xs pt-2 text-gray-600">We
-                  build websites that convert your visitors into loyal customers
-                  who put trust on you & pay you.</p>
-                                                </div>
-                                            </a>
-
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="implementation.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                   <img src="../image/icons8-design-50.png" alt="" height="60" width="60">
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">Design And Implementation</p>
-                                                    <p class="text-xs pt-2 text-gray-600">Post strategic assessments, In our second phase, we strive towards designing & implementing the right solutions for your business.
-                                                    </p>
-                                                </div>
-                                            </a>
-
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="innovation.html">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                    <img src="../image/icons8-innovation-50.png" alt="" height="100" width="100">
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">Innovation And Manage Solution</p>
-                                                    <p class="text-xs pt-2 text-gray-600">Now that we have assessed your environment, its vulnerabilities and implemented appropriate solutions, it's high time now for us to chalk out strategies towards continuous service improvements & introduce innovations by providing managed solutions.
-</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="border-b-[1px] border-gray-500">
-                        <div class="group inline-block">
-                            <div @click.away="open = false" class="" x-data="{ open: false }">
-                                <button @click="open = !open" class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm  text-left bg-transparent rounded-lg     md:w-auto md:inline md:mt-0   focus:outline-none focus:shadow-outline">
-                                    <span class="font-semibold uppercase">what we do</span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20"
-                                        :class="{'rotate-180': open, 'rotate-0': !open}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95" class=" absolute z-10 left-0 w-screen border-t-2  shadow-lg ">
-                                    <div class="px-2 pt-2 pb-4 bg-white  ">
-                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                    <img src="../image/icons8-laptop-coding-50.png" alt="" height="80" width="80">
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">We build brand</p>
-                                                    <p class="text-xs pt-2 text-gray-600">We know what it takes to craft a brand from ideation to strategy to implementation. Right from choosing a Logo design to building an identity online and nurturing them to succeed, scale & thrive leveraging
-                                                        right technology focused on your success.</p>
-                                                </div>
-                                            </a>
-
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                     <img src="../image/icons8-chipping-50.png" alt="" height="80" width="80">
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">We automate your business processes & operations</p>
-                                                    <p class="text-xs pt-2 text-gray-600">Using power of Software robots, we know how to transform client’s business digitally & bring more productivity & efficiency in their journey towards consistent growth. We believe in Intelligent automation
-                                                        as a service for companies of all sizes.</p>
-                                                </div>
-                                            </a>
-
-                                            <a class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full" href="#">
-                                                <div class="bg-teal-500 text-white rounded-lg p-3 w-[15%]">
-                                                    <img src="../image/icons8-security-shield-green-50.png"  height="60" width="60" >
-                                                </div>
-                                                <div class="ml-3 w-[80%]">
-                                                    <p class="text-sm font-semibold">We know how to protect your IT assets & infrastructure</p>
-                                                    <p class="text-xs pt-2 text-gray-600">Protect your company assets & resources from evil eyes & data breaches. We develop 360-degree cybersecurity solutions & provide ongoing management to ward off cyber threats.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="border-b-[1px] border-gray-500">
-                        <div class="px-4 py-2 font-semibold text-primaryColor faq">
-
-                            <a href="#"><span class="font-semibold uppercase text-[14px]">Who We Help</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="px-4 py-2  font-semibold text-primaryColor faq">
-
-                            <a href="faq.html"><span class="font-semibold text-[14px]">FAQ's</span></a>
-                        </div>
-                    </li>
+            <!--============== Secondary Navbar items ==============-->
+            <div class="hidden lg:flex items-center">
+              <div class="group inline-block">
+                <button
+                  class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen p-4 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
+                >
+                  <span class="font-semibold uppercase">who we do</span>
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  class="bg-white rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-32 grid grid-cols-1 md:grid-cols-2 gap-4 left-0 w-screen border-t-2 shadow-lg"
+                >
+                  <li class="rounded-sm px-3 py-1">
+                    <a
+                      class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#"
+                    >
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <img
+                          src="../image/icons8-laptop-coding-50.png"
+                          alt=""
+                          height="140"
+                          width="140"
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p class="font-semibold capitalize">We build brand</p>
+                        <p class="text-sm pt-2 text-gray-600">
+                          We know what it takes to craft a brand from ideation
+                          to strategy to implementation. Right from choosing a
+                          Logo design to building an identity online and
+                          nurturing them to succeed, scale & thrive leveraging
+                          right technology focused on your success.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="rounded-sm px-3 py-1">
+                    <a
+                      class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#"
+                    >
+                      <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <img
+                          src="../image/icons8-chipping-50.png"
+                          alt=""
+                          height="140"
+                          width="140"
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p class="font-semibold capitalize">
+                          We automate your business processes & operations
+                        </p>
+                        <p class="text-sm pt-2 text-gray-600">
+                          Using power of Software robots, we know how to
+                          transform client’s business digitally & bring more
+                          productivity & efficiency in their journey towards
+                          consistent growth. We believe in Intelligent
+                          automation as a service for companies of all sizes.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="rounded-sm relative px-3 py-1">
+                    <a
+                      class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      href="#"
+                    >
+                      <div class="bg-teal-500 text-black rounded-lg p-3">
+                        <img
+                          src="../image/icons8-security-shield-green-50.png"
+                          alt=""
+                          height="100"
+                          width="100"
+                        />
+                      </div>
+                      <div class="ml-3">
+                        <p class="font-semibold capitalize">
+                          We know how to protect your IT assets & infrastructure
+                        </p>
+                        <p class="text-sm pt-2 text-gray-600">
+                          Protect your company assets & resources from evil eyes
+                          & data breaches. We develop 360-degree cybersecurity
+                          solutions & provide ongoing management to ward off
+                          cyber threats.
+                        </p>
+                      </div>
+                    </a>
+                  </li>
                 </ul>
-                
+              </div>
 
-                <div class="flex justify-center overflow-hidden md:hidden  rounded-lg pb-4">
-                    <a class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase bg-primaryColor lg:text-lg font-bold text-white" href="contactus.html">free consultation</a>
-                </div>
+              <ul class="flex items-center header-links gap-4">
+                <li class="rounded-sm px-3 py-1 text-primaryColor faq">
+                  <a href="#"
+                    ><span class="font-semibold uppercase text-sm"
+                      >Who we help</span
+                    ></a
+                  >
+                </li>
+                <li class="rounded-sm px-3 py-1 text-primaryColor faq">
+                  <a href="faq.html"
+                    ><span class="font-bold lg:text-lg">FAQ's</span></a
+                  >
+                </li>
+                <li class="overflow-hidden py-2 rounded-lg bg-primaryColor">
+                  <a
+                    class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white"
+                    href="contactus.html"
+                    >free consultation</a
+                  >
+                </li>
+              </ul>
             </div>
-        </nav>
+            <!-- Mobile menu button -->
+            <div class="lg:hidden flex items-center gap-4">
+              <div
+                class="hidden md:block overflow-hidden py-2 rounded-lg bg-primaryColor"
+              >
+                <a
+                  class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase lg:text-lg font-bold text-white"
+                  href="contactus.html"
+                  >free consultation</a
+                >
+              </div>
+              <button
+                class="outline-none mobile-menu-button bg-secondaryColor p-2 rounded-lg"
+              >
+                <svg
+                  class="w-6 h-6 text-primaryColor"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--============== mobile menu ==============-->
+        <div
+          class="hidden mobile-menu bg-white shadow-lg pb-1 pt-24 absolute w-screen top-0 z-[-1]"
+        >
+          <ul>
+            <li class="border-b-[1px] border-gray-500">
+              <div class="group inline-block">
+                <div
+                  @click.away="open1 = false"
+                  class=""
+                  x-data="{ open1: false }"
+                >
+                  <button
+                    @click="open1 = !open1"
+                    class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none focus:shadow-outline"
+                  >
+                    <span class="font-semibold uppercase">How we do</span>
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      :class="{'rotate-180': open1, 'rotate-0': !open1}"
+                      class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    x-show="open1"
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute z-10 left-0 w-screen border-t-2 shadow-lg"
+                  >
+                    <div class="px-2 pt-2 pb-4 bg-white">
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="strategy.html"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-group-of-projects-50.png"
+                              alt=""
+                              height="60"
+                              width="60"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold">
+                              Strategy And Assessment
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              We build websites that convert your visitors into
+                              loyal customers who put trust on you & pay you.
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="implementation.html"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-design-50.png"
+                              alt=""
+                              height="60"
+                              width="60"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold">
+                              Design And Implementation
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              Post strategic assessments, In our second phase,
+                              we strive towards designing & implementing the
+                              right solutions for your business.
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="innovation.html"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-innovation-50.png"
+                              alt=""
+                              height="100"
+                              width="100"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold">
+                              Innovation And Managed Solution
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              Now that we have assessed your environment, its
+                              vulnerabilities and implemented appropriate
+                              solutions, it's high time now for us to chalk out
+                              strategies towards continuous service improvements
+                              & introduce innovations by providing managed
+                              solutions.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="border-b-[1px] border-gray-500">
+              <div class="group inline-block">
+                <div
+                  @click.away="open = false"
+                  class=""
+                  x-data="{ open: false }"
+                >
+                  <button
+                    @click="open = !open"
+                    class="flex flex-row text-[#000] items-center w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 focus:outline-none focus:shadow-outline"
+                  >
+                    <span class="font-semibold uppercase">what we do</span>
+                    <svg
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      :class="{'rotate-180': open, 'rotate-0': !open}"
+                      class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </button>
+                  <div
+                    x-show="open"
+                    x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="transform opacity-0 scale-95"
+                    x-transition:enter-end="transform opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75"
+                    x-transition:leave-start="transform opacity-100 scale-100"
+                    x-transition:leave-end="transform opacity-0 scale-95"
+                    class="absolute z-10 left-0 w-screen border-t-2 shadow-lg"
+                  >
+                    <div class="px-2 pt-2 pb-4 bg-white">
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="#"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-laptop-coding-50.png"
+                              alt=""
+                              height="80"
+                              width="80"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold capitalize">
+                              We build brand
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              We know what it takes to craft a brand from
+                              ideation to strategy to implementation. Right from
+                              choosing a Logo design to building an identity
+                              online and nurturing them to succeed, scale &
+                              thrive leveraging right technology focused on your
+                              success.
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="#"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-chipping-50.png"
+                              alt=""
+                              height="80"
+                              width="80"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold capitalize">
+                              We automate your business processes & operations
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              Using power of Software robots, we know how to
+                              transform client’s business digitally & bring more
+                              productivity & efficiency in their journey towards
+                              consistent growth. We believe in Intelligent
+                              automation as a service for companies of all
+                              sizes.
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          class="flex flex-row items-center rounded-lg bg-transparent p-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline w-full"
+                          href="#"
+                        >
+                          <div
+                            class="bg-teal-500 text-white rounded-lg p-3 w-[15%]"
+                          >
+                            <img
+                              src="../image/icons8-security-shield-green-50.png"
+                              height="60"
+                              width="60"
+                            />
+                          </div>
+                          <div class="ml-3 w-[80%]">
+                            <p class="text-sm font-semibold capitalize">
+                              We know how to protect your IT assets &
+                              infrastructure
+                            </p>
+                            <p class="text-xs pt-2 text-gray-600">
+                              Protect your company assets & resources from evil
+                              eyes & data breaches. We develop 360-degree
+                              cybersecurity solutions & provide ongoing
+                              management to ward off cyber threats.
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="border-b-[1px] border-gray-500">
+              <div class="px-4 py-2 font-semibold text-primaryColor faq">
+                <a href="#"
+                  ><span class="font-semibold uppercase text-[14px]"
+                    >Who We Help</span
+                  ></a
+                >
+              </div>
+            </li>
+            <li>
+              <div class="px-4 py-2 font-semibold text-primaryColor faq">
+                <a href="faq.html"
+                  ><span class="font-semibold text-[14px]">FAQ's</span></a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div
+            class="flex justify-center overflow-hidden md:hidden rounded-lg pb-4"
+          >
+            <a
+              class="coolBeans overflow-hidden rounded-lg px-4 py-2 uppercase bg-primaryColor lg:text-lg font-bold text-white"
+              href="contactus.html"
+              >free consultation</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!--================== FAQ's==============-->
 
     <section class="pt-32 md:pb-20 pb-12">
         <div class="">
-            <div class="mx-auto text-center text-xl text-gray-900 lg:text-4xl  mb-3 font-bold  pt-2 uppercase">
+            <div class="mx-auto text-center text-2xl md:text-3xl text-gray-900 mb-3 font-bold  pt-2 uppercase">
                 Frequently Asked Questions </div>
             <div class="mx-auto text-center w-32 border-solid border-b-4 border-yellow-500 h-1"></div>
         </div>
@@ -612,6 +861,30 @@
         </div>
     </section>
 
+    <!-- ========Consultation====== -->
+
+    <section class="w-screen bg-gray-800 py-6 md:py-10">
+      <div
+        class="lg:w-[700px] mx-auto lg:h-[70vh] flex justify-center text-white items-center flex-col text-center"
+      >
+        <h1 class="md:text-7xl font-bold text-4xl">
+          Ready to Grow Your Business Online?
+        </h1>
+
+        <p class="text-center mx-4 md:mx-0 py-8 text-base">
+          Let's connect and discuss your current needs and our offerings. Book a
+          free consultation.
+        </p>
+
+        <div class="overflow-hidden py-4 rounded-lg bg-primaryColor">
+          <a
+            class="coolBeans overflow-hidden rounded-lg px-8 py-4 uppercase lg:text-xl font-bold text-white"
+            href="contactus.html"
+            >free consultation</a
+          >
+        </div>
+      </div>
+    </section>
     <!-- ======================Footer==================== -->
     <footer class="relative bg-primaryColor pb-8 pt-12 w-screen">
 
@@ -1084,16 +1357,16 @@
         };
     </script>
 
-    <!-- Swiper JS -->
+    <!--================== Toggle Button ==================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!--================== Header Dropdown ==================-->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
-    <script src="../script/script.js"></script>
+      
+      <script src="../script/script.js"></script>
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script> -->
     <script>
         $('.question-and-answer').click(function() {
             $(this).find(".answer").toggleClass("hidden")

@@ -1,10 +1,10 @@
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+// function openForm() {
+//   document.getElementById("myForm").style.display = "block";
+// }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
+// function closeForm() {
+//   document.getElementById("myForm").style.display = "none";
+// }
 
 // Hero section slider
 
@@ -79,8 +79,9 @@ $(window).on("scroll", function () {
 
 // Form
 
-tailwind.config = {
-  plugins: [require("@tailwindcss/forms")],
-};
+// tailwind.config = {
+//   plugins: [require("@tailwindcss/forms")],
+// };
 
 
+  

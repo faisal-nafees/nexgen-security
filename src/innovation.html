@@ -36,7 +36,7 @@
               <div class="hidden lg:flex items-center space-x-1">
                 <div class="group inline-block">
                   <button
-                    class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
+                    class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen p-4 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
                   >
                     <span class="font-semibold uppercase">how we do</span>
                     <svg
@@ -105,7 +105,7 @@
                         </div>
                         <div class="ml-3">
                           <p class="font-semibold">
-                            Innovation And Manage Solution
+                            Innovation And Managed Solution
                           </p>
                           <p class="text-sm pt-2 text-gray-600">
                             Now that we have assessed your environment, its
@@ -140,7 +140,7 @@
             <div class="hidden lg:flex items-center">
               <div class="group inline-block">
                 <button
-                  class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
+                  class="outline-none focus:outline-none bg-white flex items-center min-w-32 text-primaryColor w-screen p-4 mt-2 text-sm text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white md:w-auto md:mt-0 md:ml-4focus:shadow-outline"
                 >
                   <span class="font-semibold uppercase">who we do</span>
                   <svg
@@ -170,7 +170,7 @@
                         />
                       </div>
                       <div class="ml-3">
-                        <p class="font-semibold">We build brand</p>
+                        <p class="font-semibold capitalize">We build brand</p>
                         <p class="text-sm pt-2 text-gray-600">
                           We know what it takes to craft a brand from ideation
                           to strategy to implementation. Right from choosing a
@@ -195,7 +195,7 @@
                         />
                       </div>
                       <div class="ml-3">
-                        <p class="font-semibold">
+                        <p class="font-semibold capitalize">
                           We automate your business processes & operations
                         </p>
                         <p class="text-sm pt-2 text-gray-600">
@@ -222,7 +222,7 @@
                         />
                       </div>
                       <div class="ml-3">
-                        <p class="font-semibold">
+                        <p class="font-semibold capitalize">
                           We know how to protect your IT assets & infrastructure
                         </p>
                         <p class="text-sm pt-2 text-gray-600">
@@ -239,7 +239,11 @@
 
               <ul class="flex items-center header-links gap-4">
                 <li class="rounded-sm px-3 py-1 text-primaryColor faq">
-                  <a href="#"><span class="font-semibold">WHO WE HELP</span></a>
+                  <a href="#"
+                    ><span class="font-semibold uppercase text-sm"
+                      >Who we help</span
+                    ></a
+                  >
                 </li>
                 <li class="rounded-sm px-3 py-1 text-primaryColor faq">
                   <a href="faq.html"
@@ -394,7 +398,7 @@
                           </div>
                           <div class="ml-3 w-[80%]">
                             <p class="text-sm font-semibold">
-                              Innovation And Manage Solution
+                              Innovation And Managed Solution
                             </p>
                             <p class="text-xs pt-2 text-gray-600">
                               Now that we have assessed your environment, its
@@ -464,7 +468,9 @@
                             />
                           </div>
                           <div class="ml-3 w-[80%]">
-                            <p class="text-sm font-semibold">We build brand</p>
+                            <p class="text-sm font-semibold capitalize">
+                              We build brand
+                            </p>
                             <p class="text-xs pt-2 text-gray-600">
                               We know what it takes to craft a brand from
                               ideation to strategy to implementation. Right from
@@ -491,7 +497,7 @@
                             />
                           </div>
                           <div class="ml-3 w-[80%]">
-                            <p class="text-sm font-semibold">
+                            <p class="text-sm font-semibold capitalize">
                               We automate your business processes & operations
                             </p>
                             <p class="text-xs pt-2 text-gray-600">
@@ -519,7 +525,7 @@
                             />
                           </div>
                           <div class="ml-3 w-[80%]">
-                            <p class="text-sm font-semibold">
+                            <p class="text-sm font-semibold capitalize">
                               We know how to protect your IT assets &
                               infrastructure
                             </p>
@@ -591,7 +597,7 @@
       </div>
       <div class="body-font overflow-hidden">
         <div class="container px-8 py-12 md:py-16 mx-auto">
-          <div class="-my-8 divide-y-2 divide-black">
+          <div class="-my-8 divide-y-2 divide-gray-300">
             <div
               class="py-8 flex flex-wrap md:flex-nowrap gap-8 md:justify-start justify-center"
             >
@@ -1155,9 +1161,10 @@
       };
     </script>
 
-    <!-- Swiper JS -->
+    <!--================== Toggle Button ==================-->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+    <!--================== Header Dropdown ==================-->
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
@@ -1165,14 +1172,14 @@
 
     <script src="../script/script.js"></script>
     <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script> -->
+    <!-- <script>
       $(".question-and-answer").click(function () {
         $(this).find(".answer").toggleClass("hidden");
         $(this).find(".question-chevron").toggleClass("hidden");
       });
-    </script>
+    </script> -->
   </body>
 </html>
