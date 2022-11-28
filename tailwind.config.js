@@ -5,12 +5,13 @@ module.exports = {
     colors: {
       primaryColor: "#000",
       secondaryColor: "#fcae04",
-      darkGray: "#868e96",
-      lightGray: "#e9ecef",
+      darkGray: "#1f2937",
+      lightGray: "#e5e7eb",
+      white: "#fff",
+      current: "currentColor",
+      gray_600: "#4b5563",
     },
-    extend: {
-      
-    },
+    extend: {},
   },
   plugins: [],
 };
