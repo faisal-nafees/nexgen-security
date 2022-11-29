@@ -1,63 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
-  --primary-color: #000;
-  --secondary-color: #fcae04;
-  --dark-gray: #868e96;
-  --light-gray: #dee2e6;
+    --primary-color: #000;
+    --secondary-color: #fcae04;
+    --dark-gray: #868e96;
+    --light-gray: #dee2e6;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  /* visibility: hidden; */
+    font-family: "Poppins", sans-serif;
+    visibility: hidden;
 }
+
 
 /* Navbar Background Change On Scroll  */
 
 header.black {
-  background: rgba(255, 255, 255, 0.8);
-  transition: all 1s ease-in-out;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
-    0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all 1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 header.black button,
 header.black ul .faq {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 header.black .consultation-btn {
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 0.5rem;
 }
 
 header.black button span,
 header.black ul .faq span {
-  font-size: 14px;
-  transition: all 1s ease-in-out;
+    font-size: 14px;
+    transition: all 1s ease-in-out;
 }
 
 header.black ul li a.coolBeans {
-  font-size: 14px;
-  transition: all 1s ease-in-out;
+    font-size: 14px;
+    transition: all 1s ease-in-out;
 }
 
 header.black .nav-bg {
-  height: 72px;
-  transition: all 1s ease-in-out;
+    height: 72px;
+    transition: all 1s ease-in-out;
 }
 
 header.black img.logo {
-  transition: all 1s ease-in-out;
-  height: 70px;
-  width: 70px;
+    transition: all 1s ease-in-out;
+    height: 70px;
+    width: 70px;
 }
+
 
 /* Below styles fake what can be achieved with the tailwind config
      you need to add the group-hover variant to scale and define your custom
@@ -65,6 +64,7 @@ header.black img.logo {
   	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
   	 for implementation with config file
   */
+
 
 /* .group:hover .group-hover\:scale-100 {
     transform: scale(1);
@@ -87,9 +87,11 @@ header.black img.logo {
     -webkit-backdrop-filter: blur(5px);
 } */
 
+
 /* since nested groupes are not supported we have to use 
      regular css for the nested dropdowns 
   */
+
 
 /* li>ul {
     transform: translatex(100%) scale(0);
@@ -107,27 +109,30 @@ li:hover>button svg {
     transform: rotate(-270deg);
 } */
 
+
 /* Navbar Dropdown */
+
 
 /* since nested groupes are not supported we have to use 
      regular css for the nested dropdowns 
   */
 
-li > ul {
-  transform: translatex(100%) scale(0);
+li>ul {
+    transform: translatex(100%) scale(0);
 }
 
-li:hover > ul {
-  transform: translatex(101%) scale(1);
+li:hover>ul {
+    transform: translatex(101%) scale(1);
 }
 
-li > button svg {
-  transform: rotate(-90deg);
+li>button svg {
+    transform: rotate(-90deg);
 }
 
-li:hover > button svg {
-  transform: rotate(-270deg);
+li:hover>button svg {
+    transform: rotate(-270deg);
 }
+
 
 /* Below styles fake what can be achieved with the tailwind config
      you need to add the group-hover variant to scale and define your custom
@@ -137,140 +142,143 @@ li:hover > button svg {
   */
 
 .group:hover .group-hover\:scale-100 {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .group:hover .group-hover\:-rotate-180 {
-  transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .scale-0 {
-  transform: scale(0);
+    transform: scale(0);
 }
 
 .min-w-32 {
-  min-width: 8rem;
+    min-width: 8rem;
 }
 
 .header-links button span,
 .header-links a span {
-  position: relative;
+    position: relative;
 }
 
 .header-links button span::before,
 .header-links a:hover span::before {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: -4px;
-  right: -4px;
-  display: block;
-  height: 6px;
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: -4px;
+    right: -4px;
+    display: block;
+    height: 6px;
 }
 
 .header-links button:hover span::before,
 .header-links a:hover span::before {
-  background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
+
 
 /*============ Testimonial ==========*/
 
 .overlay::before,
 .overlay::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #dee2e6;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #dee2e6;
 }
 
 .overlay::after {
-  border-radius: 0 25px 0 0;
-  background-color: #fff;
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
 }
 
 .swiper-nav-btn::before,
 .swiper-nav-btn::after {
-  font-size: 20px;
-  font-weight: 500;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--secondary-color);
-  opacity: 1;
-  width: 1px;
-  height: 4rem;
+    background-color: var(--secondary-color);
+    opacity: 1;
+    width: 1px;
+    height: 4rem;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #fff;
+    background-color: #fff;
 }
+
 
 /* ======button==== */
 
 .coolBeans {
-  overflow: hidden;
-  position: relative;
-  text-decoration: none;
-  transition: 0.2s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
 }
 
 .coolBeans::after {
-  background-color: var(--secondary-color);
-  border-radius: 0.5rem;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: -10px;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.2s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-  padding: 100px;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+    padding: 100px;
 }
 
 .coolBeans:hover::after {
-  transform: translate(0, 0);
-  height: 100%;
+    transform: translate(0, 0);
+    height: 100%;
 }
 
 .coolBeans:hover {
-  border-radius: 0.5rem;
-  color: #000;
-  height: 100%;
-  will-change: transform;
+    border-radius: 0.5rem;
+    color: #000;
+    height: 100%;
+    will-change: transform;
 }
+
 
 /* Loader */
 
 #loader {
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 12px solid #444444;
-  width: 70px;
-  height: 70px;
-  animation: spin 1s linear infinite;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .center {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
